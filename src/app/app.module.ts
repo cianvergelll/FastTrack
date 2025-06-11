@@ -7,13 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
 import { TaskManagerComponent } from './components/task-manager/task-manager.component';
 import { CalendarManagerComponent } from './components/calendar-manager/calendar-manager.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     TaskManagerComponent,
-    CalendarManagerComponent
+    CalendarManagerComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
