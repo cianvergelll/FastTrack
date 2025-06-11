@@ -15,12 +15,17 @@ header {
 }
 
 .logo {
+
+    margin-right: 5rem;
+}
+
+.logo a {
+    text-decoration: none;
     font-weight: 700;
     font-size: 2rem;
     color: var(--primary-color);
     cursor: pointer;
     transition: transform var(--transition-time) ease;
-    margin-right: 5rem;
 }
 
 .logo:hover {

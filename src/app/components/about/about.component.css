@@ -1,0 +1,234 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.about-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.highlight {
+    color: #0CCA4A;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 4rem 0;
+
+    .hero-title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 2rem;
+    }
+
+    .hero-illustration img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 3rem;
+    margin: 3rem 0;
+    border: gray solid 1px;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        text-align: center;
+    }
+
+    .mission-stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            min-width: 150px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+            .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #0CCA4A;
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                color: #666;
+            }
+        }
+    }
+}
+
+/* Features Section */
+.features-section {
+    margin: 4rem 0;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+
+        .feature-card {
+            border: gray solid 0.5px;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .feature-icon {
+                font-size: 2rem;
+                color: #0CCA4A;
+                margin-bottom: 1rem;
+            }
+
+            .feature-title {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
+
+            .feature-desc {
+                color: #666;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+/* Team Section */
+.team-section {
+    margin: 4rem 0;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+
+        .team-card {
+            text-align: center;
+
+            .team-avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 auto 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #0CCA4A;
+            }
+
+            .team-name {
+                font-size: 1.25rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .team-role {
+                color: #666;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #0CCA4A;
+    color: white;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+
+    .cta-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        .cta-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+            &.primary {
+                background: white;
+                color: #0CCA4A;
+
+                &:hover {
+                    background: #f0f0f0;
+                }
+            }
+
+            &.secondary {
+                background: transparent;
+                color: white;
+                border: 2px solid white;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+}
