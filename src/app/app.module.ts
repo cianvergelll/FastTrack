@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './components/about/about.component';
+import { TaskManagerComponent } from './components/task-manager/task-manager.component';
+import { CalendarManagerComponent } from './components/calendar-manager/calendar-manager.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    AboutComponent,
+    TaskManagerComponent,
+    CalendarManagerComponent
   ],
   imports: [
     BrowserModule,
