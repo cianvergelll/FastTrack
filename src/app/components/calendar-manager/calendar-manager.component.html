@@ -1,0 +1,142 @@
+<div class="calendar-manager-container">
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Calendar <span class="highlight">Tracker</span></h1>
+            <p class="hero-subtitle">Visualize, Schedule, and Never Miss a Deadline Again</p>
+        </div>
+        <div class="hero-illustration">
+            <img src="assets/images/calendar-illustration.svg" alt="Calendar Management Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-intro">
+            <h2 class="section-title">Smart Calendar <span class="highlight">Integration</span></h2>
+            <p class="section-description">
+                FastTask's Calendar Manager transforms your tasks into a visual timeline, helping you see your workload
+                at a glance
+                and plan your time effectively.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <h3 class="feature-title">Multiple Views</h3>
+                <p class="feature-description">
+                    Switch between day, week, month, and agenda views to see your schedule exactly how you prefer.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="feature-title">Task Integration</h3>
+                <p class="feature-description">
+                    All your tasks automatically appear on your calendar based on their due dates and times.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3 class="feature-title">Real-time Sync</h3>
+                <p class="feature-description">
+                    Changes made in your task list instantly reflect in your calendar and vice versa.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="feature-title">Quick Filtering</h3>
+                <p class="feature-description">
+                    Filter tasks by project, priority, or tags to focus on what matters most.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 class="feature-title">Shared Calendars</h3>
+                <p class="feature-description">
+                    Collaborate by sharing calendars with team members or family.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3 class="feature-title">Time Analytics</h3>
+                <p class="feature-description">
+                    Visual reports show how you're spending your time across projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2 class="section-title">Calendar <span class="highlight">Preview</span></h2>
+
+            <div class="calendar-preview">
+                <!-- Calendar mockup -->
+                <div class="calendar-header">
+                    <div class="month-nav">
+                        <button class="nav-button"><i class="fas fa-chevron-left"></i></button>
+                        <h3>June 2023</h3>
+                        <button class="nav-button"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="view-options">
+                        <button class="view-button active">Month</button>
+                        <button class="view-button">Week</button>
+                        <button class="view-button">Day</button>
+                    </div>
+                </div>
+
+                <div class="calendar-grid">
+                    <div class="day-header">Sun</div>
+                    <div class="day-header">Mon</div>
+                    <div class="day-header">Tue</div>
+                    <div class="day-header">Wed</div>
+                    <div class="day-header">Thu</div>
+                    <div class="day-header">Fri</div>
+                    <div class="day-header">Sat</div>
+
+                    <!-- Calendar cells with sample events -->
+                    <div class="calendar-cell empty"></div>
+                    <div class="calendar-cell empty"></div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event" style="background-color: #e3f5eb; border-left: 3px solid #0CCA4A;">
+                            <span class="event-time">9:00 AM</span>
+                            <span class="event-title">Team Meeting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event" style="background-color: #e3f5eb; border-left: 3px solid #0CCA4A;">
+                            <span class="event-time">2:00 PM</span>
+                            <span class="event-title">Project Deadline</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <!-- More cells... -->
+                </div>
+            </div>
+
+            <div class="demo-cta">
+                <p>Ready to visualize your productivity?</p>
+                <a routerLink="/dashboard" class="demo-button">Start Using Calendar Tracker</a>
+            </div>
+        </div>
+    </section>
+</div>
