@@ -34,7 +34,6 @@
     background-color: #f8f9fa;
     border-radius: 12px;
     padding: 3rem;
-    margin: 0rem 0;
     width: 30%;
     height: 300px;
     margin: auto;
@@ -61,6 +60,8 @@
     }
 
     .mission-btn {
+        display: block;
+        margin: 0 auto;
         width: 90%;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
@@ -70,7 +71,7 @@
         font-weight: 600;
         border: none;
         border-radius: 1rem;
-        align-self: center;
         box-shadow: 0 1px 5px green;
     }
+
 }

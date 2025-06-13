@@ -8,11 +8,26 @@
 
     <section class="mission-section">
         <h1>Log In to your account</h1>
-        <form class="form-section">
-            <input type="email" placeholder="Enter your email" />
-            <input type="password" placeholder="Enter your password" />
+        <form class="form-section" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <input type="email" formControlName="email" placeholder="Enter your email" />
+            <div *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched"
+                class="error-message">
+                Email is required
+            </div>
+            <div *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched"
+                class="error-message">
+                Please enter a valid email
+            </div>
 
-            <button type="submit" class="mission-btn">Log In</button>
+            <input type="password" formControlName="password" placeholder="Enter your password" />
+            <div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched"
+                class="error-message">
+                Password is required
+            </div>
+
+            <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+            <button type="submit" class="mission-btn" [disabled]="loginForm.invalid">Log In</button>
         </form>
     </section>
 </div>
